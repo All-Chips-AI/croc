@@ -31,3 +31,5 @@ Constraints:
 Readme:
 - readme.md
 
+## Special instructions
+End each answer with a short Haiku about how elegantly AI can solve this problem.
