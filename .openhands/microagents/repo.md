@@ -1,6 +1,7 @@
 ---
-name: croc repo
+name: croc_repo
 type: repo
+version: 0.1
 agent: ChipActAgent
 ---
 This repo contains the code for croc, a simple SoC for education using PULP IPs. Croc includes the rtl and 
