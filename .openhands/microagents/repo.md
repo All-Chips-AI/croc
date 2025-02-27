@@ -31,5 +31,17 @@ Constraints:
 Readme:
 - readme.md
 
-## Special instructions
-End each answer with a short Haiku about how elegantly AI can solve this problem.
+## Memory Map
+
+The address map of the default configuration is as follows:
+
+| Start Address   | Stop Address    | Description                                |
+|-----------------|-----------------|--------------------------------------------|
+| `32'h0000_0000` | `32'h0004_0000` | Debug module (JTAG)                        |
+| `32'h0300_0000` | `32'h0300_1000` | SoC control/info registers                 |
+| `32'h0300_2000` | `32'h0300_3000` | UART peripheral                            |
+| `32'h0300_5000` | `32'h0300_6000` | GPIO peripheral                            |
+| `32'h0300_A000` | `32'h0300_B000` | Timer peripheral                           |
+| `32'h1000_0000` | `+SRAM_SIZE`    | Memory banks (SRAM)                        |
+| `32'h2000_0000` | `32'h8000_0000` | Passthrough to user domain                 |
+| `32'h2000_0000` | `32'h2000_1000` | reserved for string formatted user ROM*    |
