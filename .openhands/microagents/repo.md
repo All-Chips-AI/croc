@@ -1,14 +1,14 @@
 ---
 name: croc_repo
 type: repo
-version: 0.1
+version: alpha
 agent: ChipActAgent
 ---
 This repo contains the code for croc, a simple SoC for education using PULP IPs. Croc includes the rtl and 
 all scripts necessary to produce a nearly finished chip in [IHPs open-source 130nm technology](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main).
 
 ## General Setup:
-The pre-existing simulation and synthesis setup can be run using the makefile in the root of the repo. 
+The pre-existing simulation and synthesis setup can be run using the makefile in the root of the repo. Assume that you will always run simulations with the verilator
 You can use
 make simulation
 to run a simulation, and 
