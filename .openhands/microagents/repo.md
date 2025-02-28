@@ -10,7 +10,7 @@ all scripts necessary to produce a nearly finished chip in [IHPs open-source 130
 ## General Setup:
 The pre-existing simulation and synthesis setup can be run using the makefile in the root of the repo. Assume that you will always run simulations with the verilator
 You can use
-make simulation
+make verilator
 to run a simulation, and 
 make yosys 
 to run synthesis.
