@@ -93,7 +93,7 @@ verilator/obj_dir/Vtb_croc_soc: verilator/croc.f $(SW_HEX)
 	cd verilator; $(VERILATOR) $(VERILATOR_ARGS) -CFLAGS "-O0" --top tb_croc_soc -f croc.f
 
 verilator: verilator/obj_dir/Vtb_croc_soc
-	cd verilator; obj_dir/Vtb_croc_soc +binary="$(realpath $(SW_HEX))"
+	cd verilator; #obj_dir/Vtb_croc_soc +binary="$(realpath $(SW_HEX))"
 
 .PHONY: verilator vsim vsim-yosys verilator-yosys
 

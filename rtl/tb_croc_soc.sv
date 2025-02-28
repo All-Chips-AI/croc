@@ -225,7 +225,7 @@ module tb_croc_soc #(
         bit [31:0] data;
         bit [7:0] byte_data;
         int byte_count;
-        static dm::sbcs_t sbcs = dm::sbcs_t'{sbautoincrement: 1'b1, sbaccess: 2, default: '0};
+        dm::sbcs_t sbcs = dm::sbcs_t'{sbautoincrement: 1'b1, sbaccess: 2, default: '0};
 
         file = $fopen(filename, "r");
         if (file == 0) begin
@@ -365,7 +365,7 @@ module tb_croc_soc #(
     // Continually read characters and print lines
     // TODO: we should be able to support CR properly, but buffers are hard to deal with...
     initial begin
-        static byte_bt uart_read_buf[$];
+        byte_bt uart_read_buf[$];
         byte_bt bite;
         
         @(posedge fetch_en_i);
